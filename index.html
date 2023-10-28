@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>course selection Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="course.js"></script>
+  </head>
+  <body>
+    <div class="testbox">
+      <form id="myform">
+        <h1><Center>course selection Form</Center></h1>
+        <hr/>
+        <div class="item">
+          <p>Name</p>
+          <input type="text" name="name" id="name"placeholder="First" />
+        </div>
+        <div class="item">
+            <p>Date of birth</p>
+            <input type="date" name="name1" id="dob" required/>
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="item">
+            <p>ROLL NO</p>
+            <input type="number" name="name3" id="rn"required/>
+          </div>
+        <div class="item">
+          <p>Email</p>
+          <input type="text" name="name4" id="email"/>
+        </div>
+        <div class="item">
+            <p>Department</p>
+            <select id="dept">
+                <option value="0" selected>none </option>
+                <option value="1">Bsc,IT</option>
+                <option value="2">Bsc,cs</option>
+                <option value="3">Bsc,ai</option>
+                <option value="4">Bca</option>
+              </select>
+              
+          </div>
+          
+            <p>course</p>
+            <div id="dept1" style="display: none">
+            <select id="c1" >
+                <option value="html">HTML</option>
+                <option value="multi media">MULTI MEDIA</option>
+                <option value="java">java</option>
+                <option value="c++">c++</option>
+              </select>
+            </div>
+              <div id="dept2" style="display: none">
+              <select id="c2">
+                <option value="data analatics">data analytics</option>
+                <option value="robotic">robotic</option>
+                <option value="machine learning">machine learning</option>
+                <option value="block chain">block chain</option>
+              </select>
+            </div>
+            <div id="dept3" style="display: none">
+                <select id="c3">
+                  <option value="sql">sql</option>
+                  <option value="ruby">ruby</option>
+                  <option value="rdms">rdms</option>
+                  <option value="python">python</option>
+                </select>
+              </div>
+              <div id="dept4" style="display: none">
+                <select id="c4">
+                  <option value="accounts">accounts</option>
+                  <option value="statics">statics</option>
+                  <option value="c">c</option>
+                  <option value="photoshop">photoshop</option>
+                </select>
+              </div>
+
+          <div class="btn-block">
+            <input name=calculate type="button" onclick=calc() class="btn btn-secondary btn-lg" value="submit">
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
